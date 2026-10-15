@@ -67,3 +67,5 @@ e2e/provisioning/prometheus/data*
 .gitnexus/
 !.claude/skills/gitnexus/
 !.claude/skills/generated/
+
+demo/*.png
