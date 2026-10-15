@@ -1,0 +1,9 @@
+{
+  // Cloud Agent env for the #1481 (Prometheus 2.53.2 + exporter + Grafana 13.2.4) repro. No Docker needed.
+  "install": "bash .cursor/install.sh",
+  "start": "bash .cursor/start.sh",
+  "terminals": [
+    { "name": "stack logs", "command": "tail -F $HOME/.cache/metrics-drilldown-demo/logs/grafana.stdout $HOME/.cache/metrics-drilldown-demo/logs/prom.log", "description": "Grafana :3320 + Prometheus :9091; check: demo/repro-check.sh" }
+  ],
+  "ports": [ { "port": 3320, "name": "Grafana" }, { "port": 9091, "name": "Prometheus" } ]
+}
